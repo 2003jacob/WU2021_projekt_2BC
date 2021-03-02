@@ -13,9 +13,10 @@
         'p1'
         't2'
         'p2'
+        'fo'
         ;
         grid-template-columns: 100vw;
-        grid-template-rows: 10vh 30vh 60vh 40vh 50vh 40vh 50vh;
+        grid-template-rows: 10vh 30vh 60vh 40vh 50vh 40vh 50vh 60vh;
         height: 280vh;
         width: 100vw;
     }
@@ -30,9 +31,12 @@
         't0 t0'
         't1 p1'
         't2 p2'
+        'fo fo'
         ;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 10vh 90vh 40vh 90vh 90vh;
+        grid-template-rows: 10vh 90vh 40vh 90vh 90vh 90vh;
+        height: 410vh;
+        width: 100vw;
     }
 }
 
@@ -47,6 +51,7 @@
 }
 
 .txt0{
+    margin-top: 50px;
     grid-area: t0;
     display: flex;
     justify-content: center;
@@ -54,6 +59,7 @@
 }
 
 .txt1{
+    margin-top: 50px;
     grid-area: t1;
     display: flex;
     justify-content: center;
@@ -61,6 +67,7 @@
 }
 
 .txt2{
+    margin-top: 50px;
     grid-area: t2;
     display: flex;
     justify-content: center;
@@ -92,4 +99,76 @@
     transition: left 0.3s;
     box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
     z-index: 10;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    grid-area: fo;
+    background-color: cadetblue;
+}
+
+@media screen and (max-width:757px){
+    .home{
+        display:grid;
+        grid-template-areas: 
+        'he'
+        't0'
+        'p0'
+        't3'
+        'p3'
+        't4'
+        'p4'
+        'fo'
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10vh 30vh 60vh 30vh 40vh 30vh 40vh 60vh;
+        height: 300vh;
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width:900px){
+    .home{
+        display:grid;
+        grid-template-areas: 
+        'he he'
+        'p0 p0'
+        't0 t0'
+        't3 p3'
+        't4 p4'
+        'fo fo'
+        ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10vh 90vh 40vh 70vh 70vh 90vh;
+        height: 370vh;
+        width: 100vw;
+    }
+}
+
+.txt3{
+    margin-top: 50px;
+    grid-area: t3;
+    display: flex;
+    justify-content: center;
+    background-color: chartreuse;
+}
+
+.txt4{
+    margin-top: 50px;
+    grid-area: t4;
+    display: flex;
+    justify-content: center;
+    background-color: chartreuse;
+}
+
+.bild3{
+    grid-area: p3;
+    background-color: crimson;
+}
+
+.bild4{
+    grid-area: p4;
+    background-color: crimson;
 }
