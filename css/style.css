@@ -15,7 +15,7 @@
         'p2'
         'fo'
         ;
-        grid-template-columns: 100vw;
+        grid-template-columns: 100%;
         grid-template-rows: 10vh 30vh 60vh 40vh 50vh 40vh 50vh 60vh;
         height: 280vh;
         width: 100vw;
@@ -33,7 +33,7 @@
         't2 p2'
         'fo fo'
         ;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 50% 50%;
         grid-template-rows: 10vh 90vh 40vh 90vh 90vh 90vh;
         height: 410vh;
         width: 100vw;
@@ -45,10 +45,10 @@
     display: flex;
     justify-content: center;
     position: fixed;
-    background-color: blue;
     width: 100vw;
-    height: 10vh
+    height: 10vh;
 }
+
 
 .txt0{
     margin-top: 50px;
@@ -76,29 +76,28 @@
 
 .bild0{
     grid-area: p0;
-    background-color: crimson;
+    max-width: 50vw;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .bild1{
     grid-area: p1;
-    background-color: crimson;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .bild2{
     grid-area: p2;
-    background-color: crimson;
-}
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
 
-.nav{
-    height: 100vh;
-    width: 80vw;
-    background: skyblue;
-    position: fixed;
-    top: 0;
-    left: -90vw;
-    transition: left 0.3s;
-    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
-    z-index: 10;
 }
 
 .footer{
@@ -122,7 +121,7 @@
         'p4'
         'fo'
         ;
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
         grid-template-rows: 10vh 30vh 60vh 30vh 40vh 30vh 40vh 60vh;
         height: 300vh;
         width: 100vw;
@@ -140,7 +139,7 @@
         't4 p4'
         'fo fo'
         ;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 50% 50%;
         grid-template-rows: 10vh 90vh 40vh 70vh 70vh 90vh;
         height: 370vh;
         width: 100vw;
@@ -165,10 +164,55 @@
 
 .bild3{
     grid-area: p3;
-    background-color: crimson;
+    
 }
 
 .bild4{
     grid-area: p4;
-    background-color: crimson;
+    
+}
+
+.menu{
+    height: 100vh;
+    width: 80vw;
+    background: hotpink;
+    position: fixed;
+    top: 0;
+    left: -90vw;
+    transition: left 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: 10;
+}
+
+.menu-button{
+    cursor: pointer;
+    display: inline;
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    border-radius: 10px;
+    width: 150px;
+}
+
+.menu-button i.material-icons{
+    font-size: 2.5rem;
+}
+
+.show{
+    left: 0;
+}
+
+.fade-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 5;
+}
+
+.main {
+    grid-area: ma;
 }
