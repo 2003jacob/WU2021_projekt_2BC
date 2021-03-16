@@ -213,6 +213,10 @@
     z-index: 5;
 }
 
+.visible{
+    display: block;
+}
+
 .main {
     grid-area: ma;
 }
