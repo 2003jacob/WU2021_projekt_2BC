@@ -1,13 +1,14 @@
 *{
     margin: 0;
+    overflow-x: hidden;
 }
 
-body {
+.darkmode {
     background-color: black;
 }
 
 @media screen and (max-width:757px){
-    .startsida{
+    .text_2{
         display: grid;
         grid-template-areas: 
         'he'
@@ -20,14 +21,14 @@ body {
         'fo'
         ;
         grid-template-columns: 100%;
-        grid-template-rows: 10vh 30vh 60vh 40vh 50vh 40vh 50vh 60vh;
+        grid-template-rows: 10vh 55vh 100vh 90vh 50vh 110vh 50vh 90vh;
         height: 280vh;
         width: 100vw;
     }
 }
 
 @media screen and (min-width:900px){
-    .startsida{
+    .text_2{
         display:grid;
         grid-template-areas:
         'he he'
@@ -109,7 +110,6 @@ body {
     height: 100%;
     object-fit: cover;
     overflow: hidden;
-
 }
 
 .footer{
@@ -123,7 +123,7 @@ body {
 }
 
 @media screen and (max-width:757px){
-    .home{
+    .text_1{
         display:grid;
         grid-template-areas: 
         'he'
@@ -132,25 +132,23 @@ body {
         't3'
         'p3'
         't4'
-        'p4'
-        'fo'
         ;
         grid-template-columns: 100%;
-        grid-template-rows: 10vh 30vh 60vh 30vh 40vh 30vh 40vh 60vh;
+        grid-template-rows: 10vh 50vh 90vh 60vh 90vh 50vh;
         height: 300vh;
         width: 100vw;
     }
 }
 
 @media screen and (min-width:900px){
-    .home{
+    .text_1{
         display:grid;
         grid-template-areas: 
         'he he'
         'p0 p0'
         't0 t0'
-        't3 p3'
-        't4 p4'
+        'p3 t3'
+        'p4 t4'
         'fo fo'
         ;
         grid-template-columns: 50% 50%;
@@ -165,7 +163,11 @@ body {
     grid-area: t3;
     display: flex;
     justify-content: center;
-    background-color: chartreuse;
+    background-color: rgb(81, 17, 141);
+    border-radius: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .txt4{
@@ -173,16 +175,27 @@ body {
     grid-area: t4;
     display: flex;
     justify-content: center;
-    background-color: chartreuse;
+    background-color: rgb(81, 17, 141);
+    border-radius: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .bild3{
     grid-area: p3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
     
 }
 
 .bild4{
     grid-area: p4;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
     
 }
 
@@ -270,6 +283,158 @@ h3 {
     font-size: 40px;
 }   
 
+h4{
+    font-family: sans-serif;
+    color: white;
+    font-size: medium;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 a {
     color: yellow;
+}
+
+@media screen and (min-width:900px){
+    .startsida{
+        display:grid;
+        grid-template-areas:
+        'fi'
+        'ab'
+        ;
+        grid-template-columns: 100vw;
+        grid-template-rows: 10vh 80vh;
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width:757px){
+    .startsida{
+        display:grid;
+        grid-template-areas: 
+        'fi'
+        'ab'
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 10vh 80vh;
+        height: 100%;
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width:757px){
+    .finder{
+        grid-area: fi;
+        display: flex;
+        justify-content: center;
+        display: grid;
+        grid-template-areas: 
+        'n1 n2'
+        'n3 n4'
+        'ab ab'
+        ;
+    }
+}
+
+@media screen and (min-width:900px){
+    .finder{
+        grid-area: fi;
+        display: flex;
+        justify-content: center;
+        display: grid;
+        grid-template-areas: 
+        'n1 n2 n3 n4 n5'
+        ;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100%;
+    }
+}
+
+.welcome{
+    display: flex;
+    justify-content: center;
+    background-image: url(/img/hight_tech.jpg);
+}
+
+.about{
+    grid-area: ab;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    width: 60vw;
+    margin-left: 240px;
+    margin-top: 200px;
+    height: 250px;
+}
+
+.nav1{
+    grid-area: n1;
+    cursor: pointer;
+    display: inline;
+   display: flex;
+    justify-content: center;
+    background-color: blueviolet;
+    border-radius: 10px;
+    margin-left: 165px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.nav1:hover{
+    background-color: violet;
+}
+
+.nav2{
+    grid-area: n2;
+    cursor: pointer;
+    display: inline;
+   display: flex;
+    justify-content: center;
+    background-color: blueviolet;
+    border-radius: 10px;
+    margin-left: 50px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.nav2:hover{
+    background-color: violet;
+}
+
+.nav3{
+    grid-area: n3;
+    cursor: pointer;
+    display: inline;
+   display: flex;
+    justify-content: center;
+    background-color: blueviolet;
+    border-radius: 10px;
+    margin-left: 50px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.nav3:hover{
+    background-color: violet;
+}
+
+.nav4{
+    grid-area: n4;
+    cursor: pointer;
+    display: inline;
+   display: flex;
+    justify-content: center;
+    background-color: blueviolet;
+    border-radius: 10px;
+    margin-left: 50px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.nav4:hover{
+    background-color: violet;
 }
