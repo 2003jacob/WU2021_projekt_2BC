@@ -5,8 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class=text_4>
+        
+        <div class="fade-layer"></div>
+
+        <div class="wrapper">
+            
+
+            <header class=header>
+                <div class="menu-button">
+                    <i class="material-icons"></i>
+                </div>
+            </header>
+        </div>
+        <main class=txt0>
+            <h5>Defining a power</h5>
+        </main>
+        <div class=txt3>
+            <h1>
+                När man definerar en förmåga använder man sig för det mesta av egenskaper som redan finns i moddet och genom creativitet kan man böjadom till nya intressanta förmågor. Man kan skapa passiva egenskaper som alltid är aktiverad men man kan även skapa saker som endlast fungerar under vissa villkor som t.ex är du i vatten, är du nära snö eller håller du i ett speciellt föremål.
+                Den här tutorialn kommer att gå igenom en förmåga som aktiveras när du trycker på en knapp. Fler villkor kan du hitta <a class=lank href="https://github.com/apace100/origins-fabric/wiki/Conditions">här</a>.
+            </h1>
+        </div>
+        <div class=txt10>
+            <h1>
+                Öppna upp mappen som heter powers. Du kan läsa om filerna och hur du sätter upp dom <a class=lank href="started.html">här</a>. I den här mappen kommer du skapa en ny json fil för varje egenskap som du vill skapa.
+                I den här tutorieln kommer jag att gå igen två stycken förmågor som jag redan har skapat. Den ena har jag döpt till "sheild_bash.json" och den andra "damage_bash". Vi börjar med sheild_bash.json. Börja med att definera vilken typ av förmåga det är. Sheild_bash är en "type": "origins:active_self", vilket som innebär att den kommer att aktiveras när man trycker på en knapp, du kan hitta fle efferkter på deras github <a class=lank href="">här</a>. Knappen kan man justera i settingsen ingame.
+                "entity_action": leder till en lista av det som vi vill ska hända när vi trycker på knappen. Vi använder åter igen en funktion från moddet, "type": "origins:add_velocity", om man vill lägga till fler effekter inom samma entity_action måste man sätta upp en array, vilket jag inte kommer att gå igenom här. Istället kommer jag visa två effekter i två olika filer. add_velocity puttar spelaren i en riktning och kräver några extra saker för att fungera.
+                Den första är vilken riktning som spelaren ska puttas följt av en intiger som betämmer hur långt man ska flyga. Den tredje taggen, "space": "local" behövs inte men den förklarar att kordinaten från "z" taggen ska vara från riktningen som spelaren är, D.V.S att z blir riktningen som du tittar istället för åt z-axeln av världen.
+            </h1>
+        </div>
+        <div class=txt11>
+            <h1>
+                Efter att entity action har blivit definerad kan du lägga till en "cooldown": den räknar i tick, D.V.S att 20 ticks är en sekund. "hud_render": är ifall man ska kunna se cooldownen på sin skärm sätt den som false för tillfället. "condition": skrivs på samma sätt som entity_action och startar med en "type": och precis som entity_action så kan du endast ha en type utan att sätta upp en array. Våran "type": "origins:equiped_item", tittar vilket item som spelaren har, equipment_slot är var itemet finns. Vi vill att itemet ska vara i spelarens "offhand".
+                "item_condition": är inte nödvändigt. I vårt fall används det för att titta vilket item spelaren håller. Vi vill att effekten bara ska fungera ifall spelaren håller i en shield. Glöm inte att stänga alla listorna. Vårat sista element är "hidden": true, detta är om effekten borde ha en förklaring när man väljer bland originsen. Notera var alla kommateknerna är då dom är viktiga för att funktionen ska fungera.
+            </h1>
+        </div>
+        <div class=txt12>
+            <h1>
+                Nu har vi kommit till damage_bash.json. Det är en till active_self effekt, skillnaden är vad som händer när man trycker på knappen. I det här fallet så har vi en "type": "origins:and", vilket som innebär att effekten kommer att göra fler en en sak. "actions": [ sätter upp en array som kommer att ta slut när vi listat av alla actions. Funktionen på bilden är två command block effekter, en skapar några particles medans den andra ger potione effekten instant_damage till alla ett block till 2 block från spelaren. Du kan hitta id:n frör alla minecraft effekter på minecraft egna gamepedia <a class=lank href="https://minecraft.fandom.com/wiki/Minecraft_Wiki">här</a>.
+                Condition och cooldown kommer att vara identiska eftersom att vi vill att båda filerna ska användas samtidigt. Men den här gången lägger vi till "hud_render": { "bar_index": 0 }, instället för "hud_render": { "should_render": false }, nu kommer spelaren kunna se cooldownen medans dom spelar. Förmågans cooldown har också en färg och en icon, du kan hitta dom iconerna som finns färdiga <a class=lank href="https://github.com/apace100/origins-fabric/blob/master/src/main/resources/assets/origins/textures/gui/resource_bar.png">här</a>.
+                Slutligen har funktionen ett "name": som är namnet på din förmåga och "description": som är förklarningen av din förmåga. Dessa används istället för "hidde":. Glöm inte bort att alla dina förmågor måste defineras i origins filen som du skapade undet steg 5 i genom gången, du kan hitta steg 5 här <a class=lank href="started.html">här</a>.
+            </h1>
+        </div>
+        <div class=bild10><img src="/img/shield_bash.png" alt="bild 1"></div>
+        <div class=bild11><img src="/img/damage_bash.png" alt="bild 2"></div>
+        <footer class=footer>
+            <ul>
+                <h3>Om du har några frågor, kontakta mig genom en av metoderna listade nedan</h3>
+                <h5>typ ett nummer eller något</h5>
+                <h5>discord namn</h5>
+                <h5>jag vet inte skype? Har inte facebook eller linkedin</h5>
+                <h5>typ_en@mail.com</h5>
+            </ul>
+        </footer>
+    </div>
+
+
+    <nav class="menu">
+        <ul>
+            <li><a href="started.html">How do I get started?</a></li>
+            <li><a href="mod.html">What is origins mod?</a></li>
+            <li><a href="about.html">Who am I?</a></li>
+            <li><h5>skapa egna krafter</h5></li>
+            <li><a href="index.html">start sidan</a></li>
+        </ul>
+    </nav>
     
+    <script src="js/main.js"></script>
 </body>
 </html>

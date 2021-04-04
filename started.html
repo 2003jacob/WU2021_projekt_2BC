@@ -22,10 +22,10 @@
             </header>
         </div>
         <main class=txt0>
-            <h1>Här är en steg för steg guide för hur du börjar.</h1>
+            <h5>Här är en steg för steg guide för hur du börjar.</h5>
         </main>
         <div class=txt3>
-            <h1>steg 1: ladda ner Fabric. För att kunna köra origins moddet måste du först instalera Fabric. Börja med att ladda ner Fabric loader. <a class=lank href="https://fabricmc.net/use/">här</a>Setill så att du laddar ner Fabric för den uppdatering av minecraft som du vill spela på.
+            <h1>steg 1: ladda ner Fabric. För att kunna köra origins moddet måste du först instalera Fabric. Börja med att ladda ner Fabric loader. <a class=lank href="https://fabricmc.net/use/">här</a> Se till så att du laddar ner Fabric för den uppdatering av minecraft som du vill spela på.
                 När du har gjort klart allt detta så borde du kunna hitta Fabric i din minecraft launcher.
             </h1>
         </div>
@@ -35,33 +35,38 @@
                 Resterande steg kommer att vara för att skapa sitt eget datapack till origins moddet. 
             </h1>
         </div>
-        <div class=txt5><h1>steg 3: sök på %appdata% igen, den här gången letar du efter saves. Dubbelklicka på saves foldern sen letaup och öppna den värld som du vill lägga datapcaket på. Du kan flytta runt det hur du vill efteråt. När du är inne i värld folderna dubbelklicka på datapack foldern. Skapa en ny folder i den, döp denna foldern till vad du vill att hela datapacket ska heta. I din datapack folder vill ska du skapa en ny folder som heter data och ett text dokument. Öppna text dokumentet och spara det som pack.mcmeta.json. Öppna upp filen i den applikation som du vill koda i, jag använder oftast ett program som heter notepad++ som du kan ladda ner <a class=lank href="https://notepad-plus-plus.org/downloads/">här</a>men vscode fungerar lika bra.
+        <div class=txt5><h1>steg 3: sök på %appdata% igen, den här gången letar du efter saves. Dubbelklicka på saves foldern sen letaup och öppna den värld som du vill lägga datapcaket på. Du kan flytta runt det hur du vill efteråt. När du är inne i värld folderna dubbelklicka på datapack foldern. Skapa en ny folder i den, döp denna foldern till vad du vill att hela datapacket ska heta. I din datapack folder vill ska du skapa en ny folder som heter data och ett text dokument. Öppna text dokumentet och spara det som pack.mcmeta.json. Öppna upp filen i den applikation som du vill koda i, jag använder oftast ett program som heter notepad++ som du kan ladda ner <a class=lank href="https://notepad-plus-plus.org/downloads/">här</a> men vscode fungerar lika bra.
                 När du har öppnat upp filen ska du skriva exakt det som står på bilden.
             </h1>
         </div>
         <div class=txt6>
             <h1>
-                steg 4: I foldern som du döpte till data ska du skapa två nya folders. En som heter origins och en som du för döpa till vad du vill, så länge som du kommer ihåg det. 
+                steg 4: I foldern som du döpte till data ska du skapa två nya folders. En som heter origins och en som du får döpa till vad du vill, så länge som du kommer ihåg det. 
                 Den foldern som har ett valfrit namn sparar vi till senare först ska du öppna origins foldern. Där i ska du skapa yttligare en ny folder som du döper origins_layer. 
                 I origins layer skapar du en text fil som du gör samma sak mer som förut, öppna, spara som, origins_layer.json.
             </h1>
         </div>
         <div class=txt7>
             <h1>
-                steg 5:
+                steg 5: Ta dig ett steg tillbaka i filerna och dubbelklicka på mappen som du själv döpte. I den ska du skapa yttligare en mapp som heter origins och en som herer powers. Vi börjar med att öppna origins mappen. 
+                I mappen ska du skapa en till json fil. Det är här du ger dina klasser deras egenskaper. För varje klass som du vill skapa måste du skapa en ny fil här. när du har skapat och öppnat json filen skriv av skelettet av det som står i bilden.
+                För att förenkla nästa steg kan du skriva av allt. Notera hur elementen står i bilden. Dom är skrivna som en simpel array men det är viktigt att följa den mallen, eftersom ett litet misstag leder till att filen inet kan läsas.
+                ett exempel på ett vanligt misstag är att sätta ett komma efter varje element förutom det sista i listan. Notera även att arrayer är element och behöver därför också komma täcken i slutet av dom [  ],
             </h1>
         </div>
         <div class=txt8>
             <h1>
-                steg 6:
+                Alla element i filen som är listade med "origins:något" är effekter tagna från bas moddet. I exempel bilden används "origins:more_exhaustion" och "origins:hotblooded" som kommer direkt från shulker och blazborn. Dessa för skapade effekter kan du hitta på origins github sida. <a class=lank href="https://github.com/apace100/origins-fabric/wiki/List-of-powers">här</a>
+                Dom elementen som är listade med "ditt_valfria_namn_pa_foldern" är dom krafterna som du kommer att skapa själv. Mer om hur du skapar dina egna egenskaper kan du hitta <a class=lank href="tips.html">här</a>
+                "icon": är den ikonen som kommer att representera din ras, det kan vara vilket minecraft item som hälst. "order": är var i listan av raser din kommer att vara plaserad. Notera att två raser inte får vara på samma possition och att några possitioner används i bas moddet. "Impact": visar användaren hur stor inflytan rasen kommer att ha på spelet. Det finns impact 1 till 3.
+                Alla raser läggs i olika listor beroende på deras impact och dessa listorna läggs i ordning från impact 1 till 2 till 3. "name": är vilket namn på rasen spelaren kommer att se ingame. och "desription": är den texten som förklarar din ras för spelaren. Glöm inte att din description INTE ska sluta med ett kommatecken eftersom att det är det sista elementet i listan.
             </h1>
         </div>
         <div class=bild3><img src="/img/Fabric_open.png" alt="bild som har med fabric att göra"></div>
         <div class=bild4><img src="/img/origins_website_censored.png" alt="bild som har med origins att göra"></div>
         <div class=bild5><img src="/img/pack_mc_bigger.png" alt="bild på mapparna"></div>
         <div class=bild6><img src="/img/origins_layer.png" alt="bild på json"></div>
-        <div class=bild7><img src="" alt="bild7"></div>
-        <div class=bild8><img src="" alt="bild8"></div>
+        <div class=bild7><img src="/img/origin_power_list2.png" alt="bild7"></div>
         <footer class=footer>
             <ul>
                 <h3>Om du har några frågor, kontakta mig genom en av metoderna listade nedan</h3>
@@ -79,7 +84,7 @@
             <li><h5>How do I get started?</h5></li>
             <li><a href="mod.html">What is origins mod?</a></li>
             <li><a href="about.html">Who am I?</a></li>
-            <li><a href="tips.html">Tips and tricks</a></li>
+            <li><a href="tips.html">skapa egna krafter</a></li>
             <li><a href="index.html">start sidan</a></li>
         </ul>
     </nav>
