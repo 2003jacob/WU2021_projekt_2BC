@@ -33,7 +33,6 @@ h3 {
 @media screen and (max-width:757px){
     h3{
         font-size: 30px;
-        margin-left: -20px;
     }
 }
 
@@ -115,7 +114,7 @@ li {
         ;
         grid-template-columns: 100%;
         grid-template-rows: 10vh 40vh 60vh 0vh 60vh 0vh 80vh 40vh 70vh 60vh 60vh 60vh 110vh 50vh;
-        height: 748vh;
+        height: auto;
         width: 100vw;
     }
 }
@@ -135,8 +134,8 @@ li {
         'fo fo'
         ;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 10vh 40vh 70vh 70vh 70vh 70vh 70vh 80vh 90vh;
-        height: 570vh;
+        grid-template-rows: 10vh 40vh 70vh 70vh 70vh 70vh 70vh 80vh 100vh;
+        height: 580vh;
         width: 100vw;
     }
 }
@@ -154,8 +153,8 @@ li {
         'fo'
         ;
         grid-template-columns: 100%;
-        grid-template-rows: 10vh 40vh 60vh 60vh 60vh 80vh 60vh;
-        height: 410vh;
+        grid-template-rows: 10vh 50vh 60vh 60vh 60vh 80vh 80vh;
+        height: 400vh;
         width: 100vw;
     }
 }
@@ -171,8 +170,8 @@ li {
         'fo fo'
         ;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 10vh 40vh 70vh 70vh 90vh;
-        height: 280vh;
+        grid-template-rows: 10vh 40vh 70vh 70vh 100vh;
+        height: 290vh;
         width: 100vw;
     }
 }
@@ -190,7 +189,7 @@ li {
         ;
         grid-template-columns: 100%;
         grid-template-rows: 10vh 40vh 60vh 40vh 60vh 60vh 60vh;
-        height: 30vh;
+        height: 290vh;
         width: 100vw;
     }
 }
@@ -206,8 +205,8 @@ li {
         'fo fo'
         ;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 10vh 40vh 70vh 100vh 90vh;
-        max-height: 500vh;
+        grid-template-rows: 10vh 40vh 70vh 100vh 100vh;
+        max-height: 550vh;
         width: 100vw;
     }
 }
@@ -227,8 +226,8 @@ li {
         'fo'
         ;
         grid-template-columns: 100%;
-        grid-template-rows: 10vh 40vh 100vh 110vh 100vh 150vh 100vh 100vh 90vh;
-        height: 810vh;
+        grid-template-rows: 10vh 40vh 100vh 110vh 100vh 150vh 100vh 100vh 100vh;
+        height: 790vh;
         width: 100vw;
     }
 }
@@ -248,8 +247,8 @@ li {
         'fo fo'
         ;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 10vh 40vh 70vh 50vh 70vh 70vh 100vh 70vh 90vh;
-        height: 570vh;
+        grid-template-rows: 10vh 40vh 70vh 50vh 70vh 70vh 100vh 70vh 100vh;
+        height: 580vh;
         width: 100vw;
     }
 }
@@ -274,8 +273,9 @@ li {
     grid-area: t0;
     display: flex;
     justify-content: center;
-    background-image: url(/img/minecraft_stone.jpg);
+    background-image: url(/img/Minecraft_stone_darker.jpg);
     border-radius: 50px;
+    height: 35vh;
     margin-bottom: 10px;
     animation: fadein 2s;
 }
@@ -303,7 +303,7 @@ li {
         background-image: url(/img/minecraft_deepslate_wall_edit.png);
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
-        height: 500px;
+        height: 520px;
     }
 }
 
@@ -325,10 +325,10 @@ li {
         grid-area: t3;
         display: flex;
         justify-content: center;
-        background-image: url(/img/minecraft_stone.jpg);
+        background-image: url(/img/Minecraft_stone_darker.jpg);
         border-radius: 50px;
         animation: fadein 2s;
-        height: 225px;
+        height: 260px;
     }
 
     .txt4{
@@ -336,7 +336,7 @@ li {
         grid-area: t4;
         display: flex;
         justify-content: center;
-        background-image: url(/img/minecraft_stone.jpg);
+        background-image: url(/img/Minecraft_stone_darker.jpg);
         border-radius: 50px;
         animation: fadein 2s;
         height: 300px;
@@ -347,7 +347,7 @@ li {
         grid-area: t5;
         display: flex;
         justify-content: center;
-        background-image: url(/img/minecraft_stone.jpg);
+        background-image: url(/img/Minecraft_stone_darker.jpg);
         border-radius: 50px;
         animation: fadein 2s;
         height: 300px;
@@ -358,7 +358,7 @@ li {
         grid-area: t6;
         display: flex;
         justify-content: center;
-        background-image: url(/img/minecraft_stone.jpg);
+        background-image: url(/img/Minecraft_stone_darker.jpg);
         border-radius: 50px;
         animation: fadein 2s;
         height: 200px;
@@ -369,7 +369,7 @@ li {
         grid-area: t7;
         display: flex;
         justify-content: center;
-        background-image: url(/img/minecraft_stone.jpg);
+        background-image: url(/img/Minecraft_stone_darker.jpg);
         border-radius: 50px;
         animation: fadein 2s;
         height: 290px;
@@ -380,7 +380,7 @@ li {
         grid-area: t8;
         display: flex;
         justify-content: center;
-        background-image: url(/img/minecraft_stone.jpg);
+        background-image: url(/img/Minecraft_stone_darker.jpg);
         border-radius: 50px;
         animation: fadein 2s;
         height: 260px;
@@ -391,7 +391,7 @@ li {
         grid-area: t10;
         display: flex;
         justify-content: center;
-        background-image: url(/img/minecraft_stone.jpg);
+        background-image: url(/img/Minecraft_stone_darker.jpg);
         border-radius: 50px;
         animation: fadein 2s;
         height: 240px;
@@ -402,7 +402,7 @@ li {
         grid-area: t11;
         display: flex;
         justify-content: center;
-        background-image: url(/img/minecraft_stone.jpg);
+        background-image: url(/img/Minecraft_stone_darker.jpg);
         border-radius: 50px;
         animation: fadein 2s;
         height: 220px;
@@ -413,7 +413,7 @@ li {
         grid-area: t12;
         display: flex;
         justify-content: center;
-        background-image: url(/img/minecraft_stone.jpg);
+        background-image: url(/img/Minecraft_stone_darker.jpg);
         border-radius: 50px;
         animation: fadein 2s;
         height: 230px;
@@ -426,10 +426,10 @@ li {
         grid-area: t3;
         display: flex;
         justify-content: center;
-        background-image: url(/img/minecraft_stone.jpg);
+        background-image: url(/img/Minecraft_stone_darker.jpg);
         border-radius: 50px;
         animation: fadein 2s;
-        height: 260px;
+        height: 300px;
     }
     
     .txt4{
@@ -437,7 +437,7 @@ li {
         grid-area: t4;
         display: flex;
         justify-content: center;
-        background-image: url(/img/minecraft_stone.jpg);
+        background-image: url(/img/Minecraft_stone_darker.jpg);
         border-radius: 50px;
         animation: fadein 2s;
         height: 350px;
@@ -448,7 +448,7 @@ li {
         grid-area: t5;
         display: flex;
         justify-content: center;
-        background-image: url(/img/minecraft_stone.jpg);
+        background-image: url(/img/Minecraft_stone_darker.jpg);
         border-radius: 50px;
         animation: fadein 2s;
         height: 400px;
@@ -459,10 +459,10 @@ li {
         grid-area: t6;
         display: flex;
         justify-content: center;
-        background-image: url(/img/minecraft_stone.jpg);
+        background-image: url(/img/Minecraft_stone_darker.jpg);
         border-radius: 50px;
         animation: fadein 2s;
-        height: 250px;
+        height: 270px;
     }
     
     .txt7{
@@ -470,10 +470,10 @@ li {
         grid-area: t7;
         display: flex;
         justify-content: center;
-        background-image: url(/img/minecraft_stone.jpg);
+        background-image: url(/img/Minecraft_stone_darker.jpg);
         border-radius: 50px;
         animation: fadein 2s;
-        height: 400px;
+        height: 420px;
     }
     
     .txt8{
@@ -481,20 +481,20 @@ li {
         grid-area: t8;
         display: flex;
         justify-content: center;
-        background-image: url(/img/minecraft_stone.jpg);
+        background-image: url(/img/Minecraft_stone_darker.jpg);
         border-radius: 50px;
         animation: fadein 2s;
-        height: 550px;
+        height: 580px;
     }    
 
     .txt10{
         grid-area: t10;
         display: flex;
         justify-content: center;
-        background-image: url(/img/minecraft_stone.jpg);
+        background-image: url(/img/Minecraft_stone_darker.jpg);
         border-radius: 50px;
         animation: fadein 2s;
-        height: 550px;
+        height: 625px;
     }
 
     .txt11{
@@ -502,10 +502,10 @@ li {
         grid-area: t11;
         display: flex;
         justify-content: center;
-        background-image: url(/img/minecraft_stone.jpg);
+        background-image: url(/img/Minecraft_stone_darker.jpg);
         border-radius: 50px;
         animation: fadein 2s;
-        height: 450px;
+        height: 455px;
     }
 
     .txt12{
@@ -513,10 +513,10 @@ li {
         grid-area: t12;
         display: flex;
         justify-content: center;
-        background-image: url(/img/minecraft_stone.jpg);
+        background-image: url(/img/Minecraft_stone_darker.jpg);
         border-radius: 50px;
         animation: fadein 2s;
-        height: 500px;
+        height: 600px;
     }
 }
 
@@ -740,11 +740,12 @@ li {
 
     .bild10{
         grid-area: p10;
-        width: 100%;
+        width: 400px;
         height: 390px;
         overflow: hidden;
         margin-top: 40px;
         animation: fadein 2s;
+        margin-left: -40px;
     }
 
     .bild11{
@@ -764,7 +765,7 @@ li {
     .menu{
         height: 100vh;
         width: 30vw;
-        background-image: url(/img/minecraft_stone.jpg);
+        background-image: url(/img/Minecraft_stone_darker.jpg);
         position: fixed;
         top: 0;
         left: -90vw;
@@ -778,7 +779,7 @@ li {
     .menu{
         height: 100vh;
         width: 80vw;
-        background-image: url(/img/minecraft_stone.jpg);
+        background-image: url(/img/Minecraft_stone_darker.jpg);
         position: fixed;
         top: 0;
         left: -90vw;
@@ -793,7 +794,7 @@ li {
     display: inline;
     display: flex;
     justify-content: center;
-    background-image: url(/img/minecraft_stone.jpg);
+    background-image: url(/img/Minecraft_stone_darker.jpg);
     border-radius: 10px;
     width: 150px;
     transition: ease-in 0.1s;
@@ -924,14 +925,14 @@ li {
 
 .about{
     grid-area: ab;
-    background-image: url(/img/minecraft_stone.jpg);
+    background-image: url(/img/Minecraft_stone_darker.jpg);
     display: flex;
     justify-content: center;
     border-radius: 50px;
     width: 60vw;
     margin-left: 240px;
     margin-top: 200px;
-    height: 200px;
+    height: 210px;
 }
 
 
@@ -943,6 +944,7 @@ li {
         margin-top: 250px;
     }
 }
+
 
 .nav1{
     grid-area: n1;
@@ -989,7 +991,24 @@ li {
     margin-top: 10px;
 }
 
-
+@media screen and (max-width:757px){
+    .nav1{
+        margin-left: 0;
+        margin-top: 50px;
+    }
+    .nav2{
+        margin-left: 0;
+        margin-top: 50px;
+    }
+    .nav3{
+        margin-left: 0;
+        margin-top: -10px;
+    }
+    .nav4{
+        margin-left: 0;
+        margin-top: -10px;
+    }
+}
     
 
 @media screen and (max-width:757px){
